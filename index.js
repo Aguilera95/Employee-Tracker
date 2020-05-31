@@ -1,6 +1,7 @@
 // Build a command-line application that at a minimum allows the user to:
 var mysql = require("mysql");
 var inquirer = require("inquirer");
+var util = require("util");
 
 
 var connection = mysql.createConnection({
@@ -15,6 +16,7 @@ connection.connect(function(err) {
   if (err) throw err;
   startUp();
 });
+connection.query=util.promisify(connection.query);
 
 function startUp() {
   inquirer
