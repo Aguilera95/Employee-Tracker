@@ -7,7 +7,7 @@
     "inquirer": "^7.1.0",
     "mysql": "^2.18.1",
     "require": "^2.4.20",
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {},
   "scripts": {
